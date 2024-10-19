@@ -1,0 +1,4 @@
+if PAGE_TYPE === 'top'
+  script(src="./assets/js/" + FILE_NAME + "/index.js" type="module" defer="defer")
+else if PAGE_TYPE === 'sub'
+  script(src="../assets/js/" + FILE_NAME + "/" + FILE_NAME + ".js" type="module" defer="defer")

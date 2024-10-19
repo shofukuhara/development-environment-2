@@ -1,0 +1,27 @@
+@use "../setting/function" as *;
+@use "../setting/mixin" as *;
+@use "../variable/color" as *;
+@use "../variable/font" as *;
+@use "sass:math";
+
+.news {
+  background-color: blue;
+}
+
+.pc-only {
+  @include media(sp) {
+    display: none !important;
+  }
+  @include media(pc) {
+    display: block;
+  }
+}
+
+.sp-only {
+  @include media(sp) {
+    display: block;
+  }
+  @include media(pc) {
+    display: none !important;
+  }
+}
